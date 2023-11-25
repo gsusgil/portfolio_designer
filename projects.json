@@ -1,0 +1,59 @@
+{
+    "projects": [
+        {
+            "id": "project1.uuid",
+            "name": "Project 1",
+            "description": "Description of Project 1",
+            "content": "Content of Project 1",
+            "image": "./images/img_template_1.png",
+            "alt": "Alternative text for Project 1",
+            "complete_on": "2023-01-15"
+        },
+        {
+            "id": "project2.uuid",
+            "name": "Project 2",
+            "description": "Description of Project 2",
+            "content": "Content of Project 2",
+            "image": "./images/img_template_2.png",
+            "alt": "Alternative text for Project 2",
+            "complete_on": "2023-02-28"
+        },
+        {
+            "id": "project3.uuid",
+            "name": "Project 3",
+            "description": "Description of Project 3",
+            "content": "Content of Project 3",
+            "image": "./images/img_template_3.png",
+            "alt": "Alternative text for Project 3",
+            "complete_on": "2023-03-20"
+        },
+        {
+            "id": "project4.uuid",
+            "name": "Project 4",
+            "description": "Description of Project 4",
+            "content": "Content of Project 4",
+            "image": "./images/img_template_4.png",
+            "alt": "Alternative text for Project 4",
+            "complete_on": "2023-04-10"
+        },
+        {
+            "id": "project5.uuid",
+            "name": "Project 5",
+            "description": "Description of Project 5",
+            "content": "Content of Project 5",
+            "image": "./images/img_template_5.png",
+            "alt": "Alternative text for Project 5",
+            "complete_on": "2023-05-05"
+        },
+        {
+            "id": "project6.uuid",
+            "name": "Project 6",
+            "description": "Description of Project 6",
+            "content": "Content of Project 6",
+            "image": "./images/img_template_6.png",
+            "alt": "Alternative text for Project 6",
+            "complete_on": "2023-06-15"
+        }
+    ]
+  }
+  

@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Condensed:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* display: block; */
+  font-size: 16px;
+}
+
+body {
+  margin: 50px;
+  background-color: #f2f2f2;
+  color: #252525;
+  font-family: "Poppins", Helvetica, sans-serif;
+  transition: 0.5s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: #fa824c;
+}
+#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#hero-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+#hero-image {
+  width: 30%;
+}
+
+.image-projects {
+  display: none;
+}
+
+#logo-container {
+  width: 200px;
+}
+
+.projects {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #434343;
+  padding: 10px;
+  margin-bottom: 5px;
+  max-width: 1440px;
+}
+
+.projects h3 {
+    font-weight: 400;
+    color: #fa824c;
+}
+
+/* ----------------------- INFINITE SCROLL ------------------------- */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.infinity-scroll {
+  overflow: hidden;
+  padding: 20px 0;
+  background-color:#f2f2f2;
+  white-space: nowrap;
+}
+.infinity-scroll:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  /* display: flex; */
+  animation: 15s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.logos-slide img:hover {
+    filter: grayscale(0%);
+    
+}
+
+/* ----------------------- DARK MODE ------------------------- */
+
+input[type="checkbox"] {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: #434343;
+  appearance: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+input[type="checkbox"]:checked {
+  background-color: #0066ff;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: 0.7s ease;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: translateX(20px);
+}
+
+.dark-mode {
+  background-color: #252525;
+  color: #f2f2f2;
+}
+.dark-mode a {
+  color: #0066ff;
+}
