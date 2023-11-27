@@ -16,6 +16,7 @@ body {
   color: #252525;
   font-family: "Poppins", Helvetica, sans-serif;
   transition: 0.5s ease-in-out;
+  overflow-x: hidden;
 }
 
 .container {
@@ -48,9 +49,31 @@ a {
   width: 30%;
 }
 
-.image-projects {
-  display: none;
+
+#project-container{
+    position: relative;
 }
+
+#project-container img{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 40%;
+    height: auto;
+
+}
+
+
+
+/* .image-projects {
+  display: none;
+} */
+
+/* https://www.youtube.com/watch?v=Iaw9rFopXPY */
+
+
 
 .hero-text{
     display: flex;
@@ -161,7 +184,24 @@ h1 {
     filter: grayscale(0%);
     
 }
+/* ----------------------- TEXT SCROLL ------------------------- */
 
+.text-scroll-container {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .text-scroll {
+    white-space: nowrap;
+    font-size: 24px;
+    color: #333;
+    display: inline-block;
+  }
+  
 /* ----------------------- DARK MODE ------------------------- */
 
 input[type="checkbox"] {
@@ -207,3 +247,5 @@ input[type="checkbox"]:checked::before {
     font-weight: 500;
     color: #fa824c;
 }
+
+

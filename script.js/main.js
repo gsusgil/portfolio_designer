@@ -23,6 +23,11 @@ fetch(jsonFile)
     // });
 
     createProject(data.projects)
+
+     // Incluye el script de hover después de cargar los proyectos
+     const script = document.createElement("script");
+     script.src = "script.js/projects.js";
+     document.body.appendChild(script);
   })
   .catch((error) => {
     console.log("error de red", error);
@@ -65,6 +70,8 @@ const maxText = (text, limit) => {
       return text.slice(0, limit) + "...";
     }
   };
+
+//-------------------------------
 
 
 

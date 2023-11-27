@@ -16,6 +16,7 @@
     <header id="header">
       <div id="logo-container">
         <img src="./images/logo_gsusgil.svg" alt="logo Jesus Gil">
+        <!-- <img id="logo-dark" src="./images/logo_gsusgil_white-02.svg" alt="logo Jesus Gil"> -->
       </div>
       <nav id="nav-bar">
           <a href="#">Home</a>
@@ -33,7 +34,7 @@
           <a href="https://www.linkedin.com/in/gsus-gil">linkedIn</a></div>
         <p>Graphic Designer living en Barcelona, Spain. With skills in Web Development & UX/UI Design. Ability to work in a team &  creativity.</p>
         <div class="profile-data"><p>Checkout my profile</p>
-          <button id="curriculum">resume</button></div>
+          <button id="curriculum" type="button">resume</button></div>
       </div >
       <img id= "hero-image"src="./images/jesus_curri_hero.png" alt="jesus gil" />
     </div>
@@ -62,7 +63,12 @@
         <img src="./images/logos_tools/vue-js-1.svg" alt="">
       </div> 
     </div>
-    <br />
+    
+    <!-- <div class="text-scroll-container">
+      <span id="habilities" class="text-scroll">First language spanish, english B-1, assertive communication, creative thinking, critical thinking, adaptability, commitment.</span>
+    </div> -->
+
+
     <!-- PROJECTS -->
     <div id="projects">
       <h2>Projects</h2>
@@ -89,8 +95,13 @@
       <p>https://www.youtube.com/watch?v=gHrS5X4nKbU</p>
       <p>Jsonplacesholder</p>
     </footer>
-   
-    <script src="script.js/script.js"></script>
+     <!-- Modal para proyectos -->
+  <div id="projectModal">
+    <img id="modalImage" alt="Project Image">
+  </div>
+    <script src="script.js/main.js"></script>
+    <!-- <script src="script.js/scrollText.js"></script> -->
+    <script src="script.js/projects.js"></script>
   </div>
   </body>
 </html>
